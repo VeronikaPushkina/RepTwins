@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LoginPage</string>
+    <string name="logo">RepTwins</string>
+    <string name="dz1Link"><a href="https://docs.google.com/document/d/1ATFMkigGVJV0fc09wok1qTgqV_VGeZ5A/edit?usp=drive_link&amp;uid=117138899159069154763rtpof=truesd=true">Нажмите, чтобы открыть дз</a></string>
+</resources>

@@ -4,8 +4,11 @@ package com.example.loginpage
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavType
-import androidx.navigation.compose.*
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import com.example.loginpage.data.FileScreenWithViewModel
 
 @Composable
 fun AppNavigation(sharedViewModel: SharedViewModel) {
@@ -44,6 +47,10 @@ fun AppNavigation(sharedViewModel: SharedViewModel) {
                 navController = navController,
                 courseCards = courseCards
             )
+
+        }
+        composable("files") {
+            FileScreenWithViewModel()
         }
     }
 }

@@ -18,6 +18,7 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material3.Button
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -120,6 +121,8 @@ fun CourseMainPage(
             Spacer(modifier = Modifier.height(16.dp))
 
             // Scrollable Area with Lesson Cards
+            Button(onClick = { navController.navigate("files") }) {    Text("Перейти к файлам")
+            }
 
 
             }

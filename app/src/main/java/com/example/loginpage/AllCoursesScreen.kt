@@ -48,8 +48,7 @@ fun AllCoursesScreen(
     courseCards: List<CourseCardData>
 ) {
     val context = LocalContext.current
-
-    // State variables
+   // State variables
     var searchText by remember { mutableStateOf(TextFieldValue("")) }
     var activeSort by remember { mutableStateOf(SortOption.NEW) }
 
@@ -144,6 +143,8 @@ fun AllCoursesScreen(
                         onLikeClick = { /* Handle like action */ }
                     )
                 }
+            }
+            Button(onClick = { navController.navigate("files") }) {    Text("Перейти к файлам")
             }
         }
 

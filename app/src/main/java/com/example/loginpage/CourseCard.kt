@@ -139,11 +139,7 @@ fun CourseCard(
                 }
 
                 // Right Column: Lessons Icon, Lessons Count, Arrow Icon
-                Column(
-                    modifier = Modifier
-                        .fillMaxHeight()
-                        .fillMaxWidth()
-                ) {
+
                     Column(
                         modifier = Modifier
                             .fillMaxHeight()
@@ -176,4 +172,3 @@ fun CourseCard(
             }
         }
     }
-}
